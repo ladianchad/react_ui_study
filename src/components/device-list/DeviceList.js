@@ -19,7 +19,7 @@ export const DeviceList = (props) =>{
       "Contents-type": "application/json"
     }}).then(res => {
       setDevices(res.data)
-    })
+    });
   },200);
 
   const createDeviceContainers = () => {

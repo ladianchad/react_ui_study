@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import { DeviceInfo } from './components/device-info/DeviceInfo';
 import { DeviceList } from './components/device-list/DeviceList';
 import { MainContainer } from './components/main-container/MainContainer';
 
@@ -17,7 +18,7 @@ function App() {
     {
       "name": "Device Info",
       "on": false,
-      "contents": "infoContent"
+      "contents": (<DeviceInfo></DeviceInfo>)
     }
   ])
   }, null)
