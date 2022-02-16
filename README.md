@@ -7,5 +7,5 @@
 ### Device
 - Show Device value
 - Update Deice value
-- Shoe Device commnad
+- Show Device commnad
 - Upate Device command
