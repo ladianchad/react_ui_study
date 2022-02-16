@@ -7,7 +7,7 @@ export const DeviceList = (props) =>{
   const [devices, setDevices] = useState([]);
   
   useState(()=>{
-    axios.get("http://study.lachani.com/v1/devices",{headers:{
+    axios.get("http://study-fianl.lachani.com/v1/devices",{headers:{
       "Contents-type": "application/json"
     }}).then(res => {
       setDevices(res.data)
@@ -15,7 +15,7 @@ export const DeviceList = (props) =>{
   }, null);
   
   useInterval(() => {
-    axios.get("http://study.lachani.com/v1/devices",{headers:{
+    axios.get("http://study-fianl.lachani.com/v1/devices",{headers:{
       "Contents-type": "application/json"
     }}).then(res => {
       setDevices(res.data)
