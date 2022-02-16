@@ -16,7 +16,7 @@ export const Index = (props) => {
         <p className="header">Contents</p>
         {creatIndexItems()}
         <p className="footer">
-          <a href="http://study.lachani.com/api">API Docs</a>
+          <a href="http://study-fianl.lachani.com/api">API Docs</a>
         </p>
     </div>
   )
