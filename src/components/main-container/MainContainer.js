@@ -19,7 +19,7 @@ export const MainContainer = (props) =>{
     const newItems = items.map(item => {
       return {
         "name": item.name,
-        "on": item.name == event.target.innerText,
+        "on": item.name == event.target.id,
         "contents": item.contents
       }
     });

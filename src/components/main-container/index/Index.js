@@ -5,7 +5,7 @@ export const Index = (props) => {
   const creatIndexItems = () => {
     return props.items.map(item => {
         return(
-          <IndexItem key={item.name} name={item.name} on={item.on} onClick={props.onClick}></IndexItem>
+          <IndexItem id={item.name} key={item.name} name={item.name} on={item.on} onClick={props.onClick}></IndexItem>
         )
       }
     )
