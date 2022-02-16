@@ -9,3 +9,9 @@
 - Update Deice value
 - Show Device commnad
 - Upate Device command
+
+### Install & Run
+```bash
+npm i
+npm run start
+```
