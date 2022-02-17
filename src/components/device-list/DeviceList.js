@@ -7,15 +7,16 @@ export const DeviceList = (props) =>{
   const [devices, setDevices] = useState([]);
   
   useState(()=>{
-    axios.get("http://study-fianl.lachani.com/v1/devices",{headers:{
+    axios.get("https://study.lachani.com/v1/devices",{headers:{
       "Contents-type": "application/json"
     }}).then(res => {
       setDevices(res.data)
+      console.log(res.data)
     })
   }, null);
   
   useInterval(() => {
-    axios.get("http://study-fianl.lachani.com/v1/devices",{headers:{
+    axios.get("https://study.lachani.com/v1/devices",{headers:{
       "Contents-type": "application/json"
     }}).then(res => {
       setDevices(res.data)

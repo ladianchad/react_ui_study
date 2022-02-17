@@ -10,7 +10,7 @@ export const Info = (props) =>{
   }
 
   const postData = ()=>{
-    axios.patch(`http://study.lachani.com/v1/devices/${props.id}/${props.name}`, updateValue, {
+    axios.patch(`https://study.lachani.com/v1/devices/${props.id}/${props.name}`, updateValue, {
       "headers": {
         "Content-type": "application/json"
       }

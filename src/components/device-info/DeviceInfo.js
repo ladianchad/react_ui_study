@@ -26,7 +26,7 @@ export const DeviceInfo = (props) =>{
 
   useInterval(() => {
     if(device.id){
-      axios.get(`http://study-fianl.lachani.com/v1/devices/${device.id}`,{headers:{
+      axios.get(`https://study.lachani.com/v1/devices/${device.id}`,{headers:{
         "Contents-type": "application/json"
       }}).then(res => {
         setDevice(res.data);
